@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$background: #FFFFFF;
+$primary: #e4c1ae;
+$dark: #121212;
+
+@mixin font($weight, $size: 16px, $lineHeight: 100%) {
+    font-family: 'Roboto';
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $lineHeight;
+}
+
+
+body {
+    background-color: $background;
+    display: grid;
+    place-content: center;
+    padding: 0 1rem;
+}
+
+main {
+    min-height: 100vh;
+    max-width: 1440px;
+}
+
+section {
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1,
+p,
+button {
+    margin-top: .5rem;
+}
+
+h1 {
+    @include font($weight: 700, $size: 36px, $lineHeight: 120%);
+}
+
+p {
+    @include font($weight: 300, $lineHeight: 150%);
+    text-align: justify;
+}
+
+button {
+    @include font($weight: 700);
+    border: none;
+
+    padding: 16px 40px;
+    border-radius: 2rem;
+    background-color: $primary;
+    color: $background;
+}
+
+button:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: inset 0px 0px 10px black;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    background: url('/../images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg')
+}

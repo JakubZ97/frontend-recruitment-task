@@ -1,2 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  background-color: #FFFFFF;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  padding: 0 1rem;
+}
+
+main {
+  min-height: 100vh;
+  max-width: 1440px;
+}
+
+section {
+  margin-top: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1,
+p,
+button {
+  margin-top: .5rem;
+}
+
+h1 {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+}
+
+p {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: justify;
+}
+
+button {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  border: none;
+  padding: 16px 40px;
+  border-radius: 2rem;
+  background-color: #e4c1ae;
+  color: #FFFFFF;
+}
+
+button:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+
+button:active {
+  -webkit-box-shadow: inset 0px 0px 10px black;
+          box-shadow: inset 0px 0px 10px black;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  background: url("/../images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg");
+}
 /*# sourceMappingURL=main.css.map */
