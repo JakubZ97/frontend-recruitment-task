@@ -214,9 +214,13 @@ button:active {
           box-shadow: inset 0px 0px 10px black;
 }
 
-img {
+picture {
   min-width: 230px;
   width: 80%;
+}
+
+img {
+  width: 100%;
 }
 
 .hide {
@@ -224,10 +228,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  img {
-    content: url("/../images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_784.jpg");
-  }
-  img,
+  picture,
   .container {
     max-width: 650px;
     width: 100%;
@@ -235,7 +236,7 @@ img {
 }
 
 @media screen and (min-width: 1024px) {
-  img {
+  picture {
     width: 50%;
   }
   section {
