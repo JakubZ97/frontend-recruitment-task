@@ -1,5 +1,6 @@
 @import './alert';
 @import './variables';
+@import './table';
 
 * {
     margin: 0;
@@ -69,6 +70,10 @@ button:active {
 img {
     min-width: 230px;
     width: 80%;
+}
+
+.hide {
+    display: none;
 }
 
 @media screen and (min-width:768px) {

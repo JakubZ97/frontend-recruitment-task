@@ -32,11 +32,17 @@
         <div class="shadow hide" id="popup-background">
           <div class="popup" id="popup-box">
             <h2>Alert!</h2>
+            <button class="x-icon" id="close-popup"></button>
             <p>
               You have clicked <span id="click-counter"></span> to related button.
             </p>
             <button class="hide" id="reset-counter">Reset counter</button>
-            <button class="x-icon" id="close-popup"></button>
+            <div class="table" id="table-holder">
+              <div class="loader" id="table-loader"></div>
+              <table>
+                <tbody></tbody>
+              </table>
+            </div>
           </div> 
         </div>
       </main>
