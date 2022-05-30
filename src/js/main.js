@@ -51,16 +51,19 @@ function hideResetButton(){
 
 
 buttonClicksCounter.addEventListener('click', (e)=>{
+    e.preventDefault()
     count(e.target.id)
     popupBackground.classList.toggle('hide')
 })
 
 closePopup.addEventListener('click', ()=>{
+    e.preventDefault()
     hideResetButton()
     popupBackground.classList.toggle('hide')
 })
 
 popupBackground.addEventListener('click', (e)=>{
+    e.preventDefault()
     if (popupBox.contains(e.target)) {
         return
     }
