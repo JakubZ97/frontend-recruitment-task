@@ -22,22 +22,22 @@
             <p>
               Infinitely scalable, feature-rich and cloud-native data management and protection for modern and legacy infrastructures and SaaS platforms, managed via a single app with no hardware required.
             </p>
-            <button>
+            <button id="button-counter">
               Button
             </button>
           </div>
         </section>
-                
-        <div class="shadow hide">
-          <div class="alert">
+
+
+        <div class="shadow " id="popup-background">
+          <div class="popup" id="popup-box">
             <h2>Alert!</h2>
             <p>
-              You have clicked <span id="click-counter">0 times</span> to related button.
+              You have clicked <span id="click-counter"></span> to related button.
             </p>
-            <div class="x-icon"></div>
+            <button class="hide" id="reset-counter">Reset counter</button>
+            <button class="x-icon" id="close-popup"></button>
           </div> 
         </div>
       </main>
-
-
 </body>
