@@ -35,11 +35,21 @@ h2 {
 }
 
 .x-icon {
+  height: 16px;
+  width: 16px;
   position: absolute;
   top: 0;
   right: 8px;
-  -webkit-transform: translate(-2rem, 2rem);
-          transform: translate(-2rem, 2rem);
+  -webkit-transform: translateX(-2rem);
+          transform: translateX(-2rem);
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+.x-icon:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .x-icon::before,
@@ -52,13 +62,13 @@ h2 {
 }
 
 .x-icon::before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -webkit-transform: translate(-1px, -7px) rotate(45deg);
+          transform: translate(-1px, -7px) rotate(45deg);
 }
 
 .x-icon::after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -webkit-transform: translate(-1px, -7px) rotate(-45deg);
+          transform: translate(-1px, -7px) rotate(-45deg);
 }
 
 .x-icon:hover {

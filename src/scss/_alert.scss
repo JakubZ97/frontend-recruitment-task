@@ -35,11 +35,20 @@ h2 {
 }
 
 .x-icon {
+    height: 16px;
+    width: 16px;
     position: absolute;
     top: 0;
     right: 8px;
-    transform: translate(-2rem, 2rem);
+    // transform: translate(-2rem, 2rem);
+    transform: translateX(-2rem);
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+}
 
+.x-icon:active {
+    box-shadow: none;
 }
 
 .x-icon::before,
@@ -52,11 +61,11 @@ h2 {
 }
 
 .x-icon::before {
-    transform: rotate(45deg);
+    transform: translate(-1px, -7px) rotate(45deg);
 }
 
 .x-icon::after {
-    transform: rotate(-45deg);
+    transform: translate(-1px, -7px) rotate(-45deg);
 }
 
 .x-icon:hover {
