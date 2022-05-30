@@ -1,17 +1,9 @@
+@import './alert';
+@import './variables';
+
 * {
     margin: 0;
     padding: 0;
-}
-
-$background: #FFFFFF;
-$primary: #e4c1ae;
-$dark: #121212;
-
-@mixin font($weight, $size: 16px, $lineHeight: 100%) {
-    font-family: 'Roboto';
-    font-weight: $weight;
-    font-size: $size;
-    line-height: $lineHeight;
 }
 
 body {
